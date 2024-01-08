@@ -145,6 +145,10 @@
               if (signal.last.tie) {
                 showMessage("TIE WIN", "warning");
               }
+
+              if(signal.last.gale) {
+                showMessage(signal.last.content, "warning")
+              }
             }
           } else {
             alert("Erro no servidor");
